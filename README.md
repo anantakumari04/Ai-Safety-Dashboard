@@ -1,12 +1,53 @@
-# React + Vite
+ AI Safety Incident Dashboard
+A simple and elegant React.js web app to report, filter, and sort AI-related safety incidents.
+Tech Stack
+Frontend: React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Styling: TailwindCSS (utility-first styling)
 
-Currently, two official plugins are available:
+Language: JavaScript (ES6+)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation & Running Locally
+Follow these steps to set up and run the project on your machine:
 
-## Expanding the ESLint configuration
+Clone the repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+git clone https://github.com/your-username/ai-safety-dashboard.git
+Navigate into the project folder
+
+cd ai-safety-dashboard
+Install dependencies
+
+
+npm install
+Start the development server
+
+npm run dev
+
+
+Open in Browser
+Visit: http://localhost:3000
+
+Features
+Submit new incident reports with title, description, and severity (Low/Medium/High).
+
+Filter incidents based on severity.
+
+Sort incidents by Newest or Oldest first.
+
+Toggle "View Details" and "Hide Details" for each incident.
+
+Design Decisions
+TailwindCSS was chosen for rapid and clean UI development with minimal CSS files.
+
+Severity is visually differentiated with colors (Yellow for Low, Orange for Medium, Red for High).
+
+Form input for severity was changed from a dropdown to radio buttons for quicker selection.
+
+The app is designed to be mobile responsive and easily extendable (e.g., adding a backend API later).
+
+Challenges Faced
+Keeping the UI minimal but still expressive for different incident severities.
+
+Handling flexible form state and managing local incident state cleanly without external libraries like Redux.
